@@ -1,0 +1,6 @@
+requests>=2.31,<3
+dateparser>=1.2,<2
+icalendar>=5.0,<6
+python-dotenv>=1.0,<2
+tzdata>=2024.1  # IANA timezone database — zoneinfo needs this explicitly on Windows/some minimal Linux images
+python-telegram-bot[job-queue]>=21.0,<22  # only needed for bot/ (the 24/7 interactive worker) — main.py alone doesn't need it

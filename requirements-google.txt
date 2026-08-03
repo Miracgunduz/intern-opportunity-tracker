@@ -1,0 +1,5 @@
+# Optional: only needed if you enable the Google Calendar push integration
+# (integrations/google_calendar.py). Install with:
+#   pip install -r requirements.txt -r requirements-google.txt
+google-api-python-client>=2.100,<3
+google-auth>=2.23,<3

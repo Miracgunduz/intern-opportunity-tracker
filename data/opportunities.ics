@@ -1,0 +1,1040 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//intern-opportunity-tracker//github-actions//
+X-WR-CALDESC:Auto-tracked free certifications\, hackathons\, and CV-boosti
+ ng programs.
+X-WR-CALNAME:Dev Opportunities Tracker
+BEGIN:VEVENT
+SUMMARY:[Deadline] CockroachDB × AWS Hackathon - Build with Agentic Memor
+ y
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+DTSTAMP:20260803T000706Z
+UID:410898008cf52075-deadline@intern-tracker
+DESCRIPTION:CockroachDB × AWS Hackathon - Build with Agentic Memory\nOrga
+ nizer: Cockroach Labs\nLocation: Online\nThemes: Machine Learning/AI\, Dat
+ abases\, DevOps\nPrize: $8\,750\nSubmission period: Jun 30 - Aug 18\, 2026
+  (16 days left)\nOpen online hackathon on Devpost. Free to enter\, no fee 
+ required.\n\nSource: devpost\nLink: https://cockroachdb-ai.devpost.com/\nR
+ elevance score: 6.5
+URL:https://cockroachdb-ai.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] ML Empowerment Build Challenge 2.0
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+DTSTAMP:20260803T000706Z
+UID:de0093e4ec3cad51-deadline@intern-tracker
+DESCRIPTION:ML Empowerment Build Challenge 2.0\nOrganizer: ML Empowerment 
+ Foundation\nLocation: Online\nThemes: Beginner Friendly\, Machine Learning
+ /AI\, Social Good\nPrize: $1\,000\nSubmission period: Jun 30 - Aug 15\, 20
+ 26 (12 days left)\nOpen online hackathon on Devpost. Free to enter\, no fe
+ e required.\n\nSource: devpost\nLink: https://ml-empowerment-2.devpost.com
+ /\nRelevance score: 6.5
+URL:https://ml-empowerment-2.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] VoltHacks
+DTSTART;VALUE=DATE:20320803
+DTEND;VALUE=DATE:20320804
+DTSTAMP:20260803T000706Z
+UID:3e291581ca823afa-deadline@intern-tracker
+DESCRIPTION:VoltHacks\nOrganizer: Dialogate\nLocation: Online\nThemes: IoT
+ \, Machine Learning/AI\, Beginner Friendly\nPrize: $32\,785\nSubmission pe
+ riod: May 22 - Sep 05\, 2026 (about 1 month left)\nOpen online hackathon o
+ n Devpost. Free to enter\, no fee required.\n\nSource: devpost\nLink: http
+ s://volthacks.devpost.com/\nRelevance score: 6.0
+URL:https://volthacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] 3D Websites Hackathon
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+DTSTAMP:20260803T000706Z
+UID:0e2956bc6bca99ee-deadline@intern-tracker
+DESCRIPTION:3D Websites Hackathon\nOrganizer: high school\nLocation: Onlin
+ e\nThemes: Design\, Web\, Beginner Friendly\nPrize: $55\nSubmission period
+ : Jun 22 - Aug 31\, 2026 (29 days left)\nOpen online hackathon on Devpost.
+  Free to enter\, no fee required.\n\nSource: devpost\nLink: https://3d-web
+ sites-hackathon.devpost.com/\nRelevance score: 6.0
+URL:https://3d-websites-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Build Beyond Hackathon
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+DTSTAMP:20260803T000706Z
+UID:765a23fb1efc09bb-deadline@intern-tracker
+DESCRIPTION:Build Beyond Hackathon\nOrganizer: BuildBeyond\nLocation: Onli
+ ne\nThemes: Beginner Friendly\, Low/No Code\, Open Ended\nPrize: $500\nSub
+ mission period: Jun 18 - Aug 16\, 2026 (13 days left)\nOpen online hackath
+ on on Devpost. Free to enter\, no fee required.\n\nSource: devpost\nLink: 
+ https://build-beyond-hackathon.devpost.com/\nRelevance score: 6.0
+URL:https://build-beyond-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] ImpactForge
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+DTSTAMP:20260803T000706Z
+UID:c60ab7da34baeefc-deadline@intern-tracker
+DESCRIPTION:ImpactForge\nOrganizer: ImpactForge\nLocation: Online\nThemes:
+  Beginner Friendly\, Low/No Code\, Social Good\nPrize: $300\nSubmission pe
+ riod: Jun 19 - Aug 24\, 2026 (21 days left)\nOpen online hackathon on Devp
+ ost. Free to enter\, no fee required.\n\nSource: devpost\nLink: https://im
+ pactforge.devpost.com/\nRelevance score: 6.0
+URL:https://impactforge.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Reverie Hacks 2026
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+DTSTAMP:20260803T000706Z
+UID:780dc89bf7ef6942-deadline@intern-tracker
+DESCRIPTION:Reverie Hacks 2026\nOrganizer: ReverieHacks\nLocation: Online\
+ nThemes: Beginner Friendly\, Machine Learning/AI\, Open Ended\nPrize: $189
+ \,020\nSubmission period: Aug 02 - 17\, 2026 (14 days left)\nOpen online h
+ ackathon on Devpost. Free to enter\, no fee required.\n\nSource: devpost\n
+ Link: https://reverie-hacks-2026.devpost.com/\nRelevance score: 6.0
+URL:https://reverie-hacks-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Arm Create: AI Optimization Challenge
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+DTSTAMP:20260803T000706Z
+UID:9e1e3e5f4f5f57c0-deadline@intern-tracker
+DESCRIPTION:Arm Create: AI Optimization Challenge\nOrganizer: arm\nLocatio
+ n: Online\nThemes: Machine Learning/AI\nPrize: $8\,000\nSubmission period:
+  Jun 04 - Aug 14\, 2026 (12 days left)\nOpen online hackathon on Devpost. 
+ Free to enter\, no fee required.\n\nSource: devpost\nLink: https://arm-ai-
+ optimization-challenge.devpost.com/\nRelevance score: 5.5
+URL:https://arm-ai-optimization-challenge.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Africa Deep Tech Challenge 2026
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+DTSTAMP:20260803T000706Z
+UID:62146f4a60195095-deadline@intern-tracker
+DESCRIPTION:Africa Deep Tech Challenge 2026\nOrganizer: Africa Deep Tech F
+ oundation\nLocation: Online\nThemes: Machine Learning/AI\, Productivity\nP
+ rize: $16\,500\nSubmission period: Jun 17 - Aug 25\, 2026 (22 days left)\n
+ Open online hackathon on Devpost. Free to enter\, no fee required.\n\nSour
+ ce: devpost\nLink: https://adtc-2026.devpost.com/\nRelevance score: 5.5
+URL:https://adtc-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20990803
+DTEND;VALUE=DATE:20990804
+DTSTAMP:20260803T000706Z
+UID:a85e89104091cc2c-deadline@intern-tracker
+DESCRIPTION:Link\nAzure | Microsoft | Free AZ-900 Microsoft Azure Fundamen
+ tals certification (worth $99) upon completion of the 2 day virtual traini
+ ng. | [Link](https://www.microsoft.com/en-ie/training-days#azure) ("Fundam
+ entals" tab) | Limited Time |\n\nSource: github\nLink: https://www.microso
+ ft.com/en-ie/training-days#azure\nRelevance score: 5.5
+URL:https://www.microsoft.com/en-ie/training-days#azure
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20990803
+DTEND;VALUE=DATE:20990804
+DTSTAMP:20260803T000706Z
+UID:e6c9a4871239adc2-deadline@intern-tracker
+DESCRIPTION:Link\nAzure | Microsoft | Free PL-900 Microsoft Power Platform
+  Fundamentals certification (worth $99) upon completion of the 1 day virtu
+ al training. | [Link](https://www.microsoft.com/en-ie/training-days#pp) ("
+ Fundamentals" tab) | Limited Time |\n\nSource: github\nLink: https://www.m
+ icrosoft.com/en-ie/training-days#pp\nRelevance score: 5.5
+URL:https://www.microsoft.com/en-ie/training-days#pp
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Build with Gemini XPRIZE
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+DTSTAMP:20260803T000706Z
+UID:138515ca90191d53-deadline@intern-tracker
+DESCRIPTION:Build with Gemini XPRIZE\nOrganizer: XPRIZE\nLocation: Online\
+ nThemes: Machine Learning/AI\, Education\, Productivity\nPrize: $2\,000\,0
+ 00\nSubmission period: May 19 - Aug 17\, 2026 (15 days left)\nOpen online 
+ hackathon on Devpost. Free to enter\, no fee required.\n\nSource: devpost\
+ nLink: https://xprize.devpost.com/\nRelevance score: 5.0
+URL:https://xprize.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] RevenueCat Shipaton 2026
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+DTSTAMP:20260803T000706Z
+UID:3023921c39c0ec85-deadline@intern-tracker
+DESCRIPTION:RevenueCat Shipaton 2026\nOrganizer: RevenueCat\nLocation: Onl
+ ine\nThemes: Design\, Gaming\, Mobile\nPrize: $685\,000\nSubmission period
+ : Jul 31 - Oct 01\, 2026 (about 2 months left)\nOpen online hackathon on D
+ evpost. Free to enter\, no fee required.\n\nSource: devpost\nLink: https:/
+ /revenuecat-shipaton-2026.devpost.com/\nRelevance score: 5.0
+URL:https://revenuecat-shipaton-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Agentic Cinema: The Blockbuster Hackathon
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+DTSTAMP:20260803T000706Z
+UID:63faeb21aeecc598-deadline@intern-tracker
+DESCRIPTION:Agentic Cinema: The Blockbuster Hackathon\nOrganizer: Google\n
+ Location: Online\nThemes: Databases\, Machine Learning/AI\, Open Ended\nPr
+ ize: $75\,000\nSubmission period: Jul 27 - Sep 07\, 2026 (about 1 month le
+ ft)\nOpen online hackathon on Devpost. Free to enter\, no fee required.\n\
+ nSource: devpost\nLink: https://agentic-cinema.devpost.com/\nRelevance sco
+ re: 5.0
+URL:https://agentic-cinema.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Build with DataHub: The Agent Hackathon
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+DTSTAMP:20260803T000706Z
+UID:ff90ffebb5a2268d-deadline@intern-tracker
+DESCRIPTION:Build with DataHub: The Agent Hackathon\nOrganizer: DataHub\nL
+ ocation: Online\nThemes: Machine Learning/AI\, DevOps\, Open Ended\nPrize:
+  $20\,500\nSubmission period: Jul 06 - Aug 10\, 2026 (8 days left)\nOpen o
+ nline hackathon on Devpost. Free to enter\, no fee required.\n\nSource: de
+ vpost\nLink: https://datahub.devpost.com/\nRelevance score: 5.0
+URL:https://datahub.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] CALL-E: Your Code Is Calling
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+DTSTAMP:20260803T000706Z
+UID:a1ce51119b65b5f5-deadline@intern-tracker
+DESCRIPTION:CALL-E: Your Code Is Calling\nOrganizer: CALL-E\nLocation: Onl
+ ine\nThemes: Communication\, Enterprise\, Machine Learning/AI\nPrize: $10\
+ ,000\nSubmission period: Jul 23 - Sep 14\, 2026 (about 1 month left)\nOpen
+  online hackathon on Devpost. Free to enter\, no fee required.\n\nSource: 
+ devpost\nLink: https://call-e.devpost.com/\nRelevance score: 5.0
+URL:https://call-e.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] YouCam API Skin AI & Apparel VTO Hackathon 
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+DTSTAMP:20260803T000706Z
+UID:f8b850635a7f6df3-deadline@intern-tracker
+DESCRIPTION:YouCam API Skin AI & Apparel VTO Hackathon \nOrganizer: Perfec
+ t Corp\nLocation: Online\nThemes: Machine Learning/AI\, AR/VR\, E-commerce
+ /Retail\nPrize: $6\,000\nSubmission period: Jul 06 - Aug 17\, 2026 (15 day
+ s left)\nOpen online hackathon on Devpost. Free to enter\, no fee required
+ .\n\nSource: devpost\nLink: https://youcam-api.devpost.com/\nRelevance sco
+ re: 5.0
+URL:https://youcam-api.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Backblaze Generative Media Hackathon: Build with Genbla
+ ze on B2
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T000706Z
+UID:8bb49286af087abe-deadline@intern-tracker
+DESCRIPTION:Backblaze Generative Media Hackathon: Build with Genblaze on B
+ 2\nOrganizer: Backblaze\nLocation: Online\nThemes: Machine Learning/AI\, M
+ usic/Art\, Voice skills\nPrize: $10\,000\nSubmission period: Jun 22 - Aug 
+ 03\, 2026 (about 21 hours left)\nOpen online hackathon on Devpost. Free to
+  enter\, no fee required.\n\nSource: devpost\nLink: https://backblaze-gene
+ rative-media.devpost.com/\nRelevance score: 5.0
+URL:https://backblaze-generative-media.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] QuantumHacks
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+DTSTAMP:20260803T000706Z
+UID:db20ed7adeb31628-deadline@intern-tracker
+DESCRIPTION:QuantumHacks\nOrganizer: Quantumhacks\nLocation: Online\nTheme
+ s: Databases\, Fintech\, Quantum\nPrize: $1\,000\nSubmission period: Jun 2
+ 1 - Aug 20\, 2026 (18 days left)\nOpen online hackathon on Devpost. Free t
+ o enter\, no fee required.\n\nSource: devpost\nLink: https://quantumhacks.
+ devpost.com/\nRelevance score: 5.0
+URL:https://quantumhacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Brainwave 2026
+DTSTART;VALUE=DATE:20260809
+DTEND;VALUE=DATE:20260810
+DTSTAMP:20260803T000706Z
+UID:8a792c53609d7977-deadline@intern-tracker
+DESCRIPTION:Brainwave 2026\nOrganizer: ACT House\nLocation: Online\nThemes
+ : AR/VR\, Blockchain\, Communication\nPrize: $550\nSubmission period: Jun 
+ 12 - Aug 09\, 2026 (7 days left)\nOpen online hackathon on Devpost. Free t
+ o enter\, no fee required.\n\nSource: devpost\nLink: https://brainwaves.de
+ vpost.com/\nRelevance score: 5.0
+URL:https://brainwaves.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Free Certifications
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+DTSTAMP:20260803T000706Z
+UID:be908024aa0faab7-deadline@intern-tracker
+DESCRIPTION:Free Certifications\nMethodology | Certiprof | Assessment (mcq
+ ) | [Free Certifications](https://certiprof.com/pages/free-new-entry-level
+ -certification) | NA | 7 + 1| Credly | 1-3 Years | Exams.  Life Long Learn
+ ing Badge can be obtained by requesting\n\nSource: github\nLink: https://c
+ ertiprof.com/pages/free-new-entry-level-certification\nRelevance score: 4.
+ 5
+URL:https://certiprof.com/pages/free-new-entry-level-certification
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Amazon Web Services Training and Certification
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+DTSTAMP:20260803T000706Z
+UID:45487db3842d8fe0-deadline@intern-tracker
+DESCRIPTION:Amazon Web Services Training and Certification\n<img src='http
+ s://images.credly.com/size/400x400/images/14a6da77-7f93-4867-81ef-ad7c6a40
+ 0ec2/blob.png' height='100' /><br/>[Amazon Web Services Training and Certi
+ fication](#amazon-web-services-training-and-certification-55) | AWS's offi
+ cial training body offering cloud computing certifications and skill devel
+ opment. | 55 | ✅ | [Amazon Web Services Training and Certification](http
+ s://www.credly.com/organizations/amazon-web-services/badges) |\n\nSource: 
+ github\nLink: https://www.credly.com/organizations/amazon-web-services/bad
+ ges\nRelevance score: 4.0
+URL:https://www.credly.com/organizations/amazon-web-services/badges
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Free Certifications
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270704
+DTSTAMP:20260803T000706Z
+UID:8bb6e19513970240-deadline@intern-tracker
+DESCRIPTION:Free Certifications\nMethodology | SCRUMstudy | Assessment (mc
+ q) | [Free Certifications](https://online.vmedu.com/Courses/ExamSchedule) 
+ | NA | 7 | Shareable link | Lifelong | Exams\n\nSource: github\nLink: http
+ s://online.vmedu.com/Courses/ExamSchedule\nRelevance score: 4.0
+URL:https://online.vmedu.com/Courses/ExamSchedule
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T000706Z
+UID:4b2122252febba3e-deadline@intern-tracker
+DESCRIPTION:Link\nIT sector | Bitdegree | gain or improve digital skills o
+ n our eLearning platform | [Link](https://www.bitdegree.org/free-certifica
+ tions-online) | Unknown |\n\nSource: github\nLink: https://www.bitdegree.o
+ rg/free-certifications-online\nRelevance score: 4.0
+URL:https://www.bitdegree.org/free-certifications-online
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] AWS Educate Getting Started with Security - Training Ba
+ dge
+DTSTART;VALUE=DATE:20890202
+DTEND;VALUE=DATE:20890203
+DTSTAMP:20260803T000706Z
+UID:ff4822748a8ab4df-deadline@intern-tracker
+DESCRIPTION:AWS Educate Getting Started with Security - Training Badge\n20
+ 26-08-02 | [AWS Educate Getting Started with Security - Training Badge](ht
+ tps://www.credly.com/badges/eb54a438-0285-4897-bb89-2c0bacc6adf7/public_ur
+ l) | Amazon Web Services Training and Certification | Credly Verified |\n\
+ nSource: github\nLink: https://www.credly.com/badges/eb54a438-0285-4897-bb
+ 89-2c0bacc6adf7/public_url\nRelevance score: 4.0
+URL:https://www.credly.com/badges/eb54a438-0285-4897-bb89-2c0bacc6adf7/pub
+ lic_url
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] AWS Cloud Quest
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20260803T000706Z
+UID:adeacedbf45ecb5d-deadline@intern-tracker
+DESCRIPTION:AWS Cloud Quest\nDiverse (Cloud\, AI\, Data) | AWS | Videos\, 
+ Hands-on\, Assessment (mcq) | [AWS Cloud Quest](https://explore.skillbuild
+ er.aws/learn/course/11458/aws-cloud-quest-cloud-practitioner) | NA | 1 | C
+ redly | Lifelong | Role-playing simulation game. Only Cloud Practitioner i
+ s free.\n\nSource: github\nLink: https://explore.skillbuilder.aws/learn/co
+ urse/11458/aws-cloud-quest-cloud-practitioner\nRelevance score: 3.5
+URL:https://explore.skillbuilder.aws/learn/course/11458/aws-cloud-quest-cl
+ oud-practitioner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Community Theme
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+DTSTAMP:20260803T000706Z
+UID:2db3472087061999-deadline@intern-tracker
+DESCRIPTION:Community Theme\nSecurity | RangeForce | Hands-on | [Community
+  Theme](https://portal.rangeforce.com/courses/category-type/660bdde2c0aa9a
+ 00016a281c) | NA | 5+ | Virtualbadge.io | 1 Year | Free Learning and badge
+ s\n\nSource: github\nLink: https://portal.rangeforce.com/courses/category-
+ type/660bdde2c0aa9a00016a281c\nRelevance score: 3.5
+URL:https://portal.rangeforce.com/courses/category-type/660bdde2c0aa9a0001
+ 6a281c
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+DTSTAMP:20260803T000706Z
+UID:a474726802f7006e-deadline@intern-tracker
+DESCRIPTION:Link\nGoogle Cloud | QwikLabs | Extra 30 days for Google Cloud
+  labs on Qwiklabs. | [Link](https://go.qwiklabs.com/qwiklabs-free) | Unkno
+ wn |\n\nSource: github\nLink: https://go.qwiklabs.com/qwiklabs-free\nRelev
+ ance score: 3.5
+URL:https://go.qwiklabs.com/qwiklabs-free
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+DTSTAMP:20260803T000706Z
+UID:fd6b2e36bc5362d6-deadline@intern-tracker
+DESCRIPTION:Link\nGoogle Cloud | Qwiklabs | Claim 30 days free Qwiklabs an
+ d access to the featured labs. | [Link](https://go.qwiklabs.com/googleclou
+ dsolutions) | Unknown |\n\nSource: github\nLink: https://go.qwiklabs.com/g
+ ooglecloudsolutions\nRelevance score: 3.5
+URL:https://go.qwiklabs.com/googlecloudsolutions
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Certified Argo Project Associate Certification
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T000706Z
+UID:3955e25e0a086e5a-deadline@intern-tracker
+DESCRIPTION:Certified Argo Project Associate Certification\nWhile this col
+ lection focuses on free badges\, many paid Credly certifications are excel
+ lent investments. For example\, the [Certified Argo Project Associate Cert
+ ification](https://training.linuxfoundation.org/certification/certified-ar
+ go-project-associate-capa/) from the Linux Foundation is extremely challen
+ ging and valuable. However\, quality varies - some paid badges are overpri
+ ced or subpar. Research thoroughly and stick to reputable organizations.\n
+ \nSource: github\nLink: https://training.linuxfoundation.org/certification
+ /certified-argo-project-associate-capa/\nRelevance score: 3.0
+URL:https://training.linuxfoundation.org/certification/certified-argo-proj
+ ect-associate-capa/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Mylearn
+DTSTART;VALUE=DATE:20280803
+DTEND;VALUE=DATE:20280804
+DTSTAMP:20260803T000706Z
+UID:6735ec809cf02f48-deadline@intern-tracker
+DESCRIPTION:Mylearn\nData (Database) | Oracle | Assessment (mcq) | [Mylear
+ n](https://mylearn.oracle.com/ou/search/?filters=Type-certification&filter
+ s=Type-free) | NA | 3+ | 2 Years | Lifelong | Free learning\n\nSource: git
+ hub\nLink: https://mylearn.oracle.com/ou/search/?filters=Type-certificatio
+ n&filters=Type-free\nRelevance score: 3.0
+URL:https://mylearn.oracle.com/ou/search/?filters=Type-certification&filte
+ rs=Type-free
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Start] Oracle Offers Free Training and Certification for Oracle C
+ loud Infrastructure
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DTSTAMP:20260803T000706Z
+UID:00db786b9e0b0455-start@intern-tracker
+DESCRIPTION:Oracle Offers Free Training and Certification for Oracle Cloud
+  Infrastructure\n[Oracle Offers Free Training and Certification for Oracle
+  Cloud Infrastructure](https://www.oracle.com/news/announcement/oracle-off
+ ers-free-training-and-certification-for-oracle-cloud-infrastructure-2021-0
+ 9-08/) *- Starting September 2021 till 28 February 2022*\n\nSource: github
+ \nLink: https://www.oracle.com/news/announcement/oracle-offers-free-traini
+ ng-and-certification-for-oracle-cloud-infrastructure-2021-09-08/\nRelevanc
+ e score: 3.0
+URL:https://www.oracle.com/news/announcement/oracle-offers-free-training-a
+ nd-certification-for-oracle-cloud-infrastructure-2021-09-08/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20260803T000706Z
+UID:cd6f9afe39067967-deadline@intern-tracker
+DESCRIPTION:Link\nAPI | API Academy | Free API Designer and API Security A
+ rchitect certifications. | [Link](https://apiacademy.co/api-certification/
+ ) | Unknown |\n\nSource: github\nLink: https://apiacademy.co/api-certifica
+ tion/\nRelevance score: 3.0
+URL:https://apiacademy.co/api-certification/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Link
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T000706Z
+UID:c99ceda3e0ca56f6-deadline@intern-tracker
+DESCRIPTION:Link\nZerto | Zerto | Free Zerto Associate Certification on Ze
+ rto University. | [Link](https://www.zerto.com/myzerto/training/) | Unknow
+ n |\n\nSource: github\nLink: https://www.zerto.com/myzerto/training/\nRele
+ vance score: 3.0
+URL:https://www.zerto.com/myzerto/training/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Accepted First Software Developer Position (.Net)
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+DTSTAMP:20260803T005809Z
+UID:bdb105bd81edc0e9-deadline@intern-tracker
+DESCRIPTION:Accepted First Software Developer Position (.Net)\nThis is to 
+ serve as some encouragement and guidance for new grads\, upcoming grads\, 
+ and anyone trying to land that first job.   I applied for 37 positions and
+  out of the 37 I had 8 interviews and of those 8 I had 4 offers(MD\, VA\, 
+ WV\, and CA).   About me: I am graduating this February with a BS in CIS\,
+  3.3 gpa. I have 1 internship (.Net &amp\; SQL Server) and 1 externship(ba
+ sically an online internship). I also have Fiverr Xamarin work over about 
+ th\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/com
+ ments/l78ni5/accepted_first_software_developer_position_net/\nRelevance sc
+ ore: 10.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/l78ni5/accepted_fi
+ rst_software_developer_position_net/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Certain CS grads hailing from USA are the most ungratef
+ ul bunch I ever had the misfortune of witnessing?
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+DTSTAMP:20260803T005809Z
+UID:4d5eb03663d732dc-deadline@intern-tracker
+DESCRIPTION:Certain CS grads hailing from USA are the most ungrateful bunc
+ h I ever had the misfortune of witnessing?\nOver the past couple of months
+  this subreddit has been showing up in my feed and nothing was more infuri
+ ating than reading doomposting and fearmongering amongst the herd.   You w
+ ere born in a first world country who pursued one if not the most versatil
+ e degree in the current era and are fortunate enough that your ecosystem o
+ f education and workforce enables you to build solid interdisciplinar\n\nS
+ ource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comments/1
+ usffny/certain_cs_grads_hailing_from_usa_are_the_most/\nRelevance score: 8
+ .0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1usffny/certain_cs
+ _grads_hailing_from_usa_are_the_most/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] 2 Yoe Mid Level Job Search Experience
+DTSTART;VALUE=DATE:20310803
+DTEND;VALUE=DATE:20310804
+DTSTAMP:20260803T005809Z
+UID:15e83737ada3cc7b-deadline@intern-tracker
+DESCRIPTION:2 Yoe Mid Level Job Search Experience\nSankey Diagram    Wrapp
+ ed up job search for mid level and going from 180k TC remote to 240-250k T
+ C in person at top  AI Infrastructure startup    Prep     Neetcode 150 (Wo
+ uld do 250 if had time but already had 670 LC done) + DDIA + Hello Intervi
+ ew + GreatFrontend      Now to Controversial Meaty Stuff     If you get ea
+ sily offended/insulted\, then this post probably won&#39\;t be for you    
+  Things I learnt     Pipeline is completely clogged up for mid level an\n\
+ nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comments
+ /1ufmwm1/2_yoe_mid_level_job_search_experience/\nRelevance score: 7.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1ufmwm1/2_yoe_mid_
+ level_job_search_experience/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Advice Needed for a New College Graduate. Need some hel
+ p to figure out which certifications should be worth looking into\, and wh
+ at should be done next.
+DTSTART;VALUE=DATE:20320803
+DTEND;VALUE=DATE:20320804
+DTSTAMP:20260803T005809Z
+UID:e7be917f6ccbcf53-deadline@intern-tracker
+DESCRIPTION:Advice Needed for a New College Graduate. Need some help to fi
+ gure out which certifications should be worth looking into\, and what shou
+ ld be done next.\nHey everyone\, I need some help getting some clarity reg
+ arding the path I should be taking. I was not able to secure any internshi
+ ps during college\, and I did not build many personal projects because I w
+ as focused on passing my classes. It was mostly team projects I have in my
+  github\, though unfortunately I can&#39\;t seem to easily access it anymo
+ \n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comme
+ nts/1ugj7de/advice_needed_for_a_new_college_graduate_need/\nRelevance scor
+ e: 6.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1ugj7de/advice_nee
+ ded_for_a_new_college_graduate_need/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Need help picking a Microsoft Azure cert
+DTSTART;VALUE=DATE:20320803
+DTEND;VALUE=DATE:20320804
+DTSTAMP:20260803T005809Z
+UID:c59c896feb6b6805-deadline@intern-tracker
+DESCRIPTION:Need help picking a Microsoft Azure cert\nWhat’s up everyone
+ \, I recently completed the Microsoft AI skills fest program a week ago an
+ d was awarded a free voucher to take any test for a certification. I plann
+ ed on going for the AZ-204 with my voucher. I discovered today that they
+ ’re ruling the 204 obsolete\, which is a bummer. I do see a AZ-200 but I
+  wanted to get some background from someone with more expertise before I m
+ ake my decision on what to go after before I start studying for it.   To g
+ ive\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/co
+ mments/1uet9sh/need_help_picking_a_microsoft_azure_cert/\nRelevance score:
+  6.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1uet9sh/need_help_
+ picking_a_microsoft_azure_cert/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Unpaid Internship\, Take or Reject?
+DTSTART;VALUE=DATE:20290802
+DTEND;VALUE=DATE:20290803
+DTSTAMP:20260803T005809Z
+UID:3b503ecbfb09e2d8-deadline@intern-tracker
+DESCRIPTION:Unpaid Internship\, Take or Reject?\nHi   I went through an in
+ terview at a very small company\, 7 people (2 being actual founders\, 5 in
+ terns\, 3 software development interns). And I am wondering if I should go
+  with this job or not.   I am a 4th year software engineering student purs
+ uing a career as a full-stack web dev. This internship I found will pay me
+  no money during the internship and they expect me to work around 10-15 ho
+ urs per week or based on task completion. The internship duration is 3-6 \
+ n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/commen
+ ts/1v90he9/unpaid_internship_take_or_reject/\nRelevance score: 5.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v90he9/unpaid_int
+ ernship_take_or_reject/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] CS Grad trapped doing L1 grunt work. Is AZ-104 + Script
+ ing + CS Degree enough for Cloud\, or am I stuck?
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20260803T005809Z
+UID:4acb25614fa9d015-deadline@intern-tracker
+DESCRIPTION:CS Grad trapped doing L1 grunt work. Is AZ-104 + Scripting + C
+ S Degree enough for Cloud\, or am I stuck?\nTL\;DR: I’m a recent CS grad
+ uate (Software Engineering concentration) as a Field Support Technician at
+  a large corporate HQ. On paper I&#39\;m L2\, but in reality\, I&#39\;m st
+ uck doing L1 hardware churn\, desk moves\, and imaging. I feel totally los
+ t and afraid that 1 year of support will label me a &quot\;helpdesk guy fo
+ rever\,&quot\; even with my coding background\, network internships\, and 
+ AZ-104 pre\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquest
+ ions/comments/1v9wwp3/cs_grad_trapped_doing_l1_grunt_work_is_az104/\nRelev
+ ance score: 5.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v9wwp3/cs_grad_tr
+ apped_doing_l1_grunt_work_is_az104/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Is it realistic to pivot from Data Analyst to Data Engi
+ neer in ~1 year?
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+DTSTAMP:20260803T005809Z
+UID:1f2a5d0af66e323a-deadline@intern-tracker
+DESCRIPTION:Is it realistic to pivot from Data Analyst to Data Engineer in
+  ~1 year?\nI&#39\;m currently a Data Analyst at a large telecom company\, 
+ where I&#39\;ve been for about two years. This is my first job out of coll
+ ege. Originally\, I was aiming for cloud-related roles as I had been self-
+ studying Linux\, AWS\, Terraform\, and had started learning Kubernetes. Ho
+ wever\, there weren&#39\;t many junior opportunities\, so I took this job 
+ because it offered great benefits... and beggars can&#39\;t be choosers.  
+  Now o\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions
+ /comments/1v4p9z2/is_it_realistic_to_pivot_from_data_analyst_to/\nRelevanc
+ e score: 5.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v4p9z2/is_it_real
+ istic_to_pivot_from_data_analyst_to/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Is it wise to invest 1–2 years learning full-stack de
+ velopment in 2026?
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+DTSTAMP:20260803T005809Z
+UID:83c76ded919dbb4d-deadline@intern-tracker
+DESCRIPTION:Is it wise to invest 1–2 years learning full-stack developme
+ nt in 2026?\nHi!    If you were starting from zero today—with AI improvi
+ ng every month and junior opportunities shrinking—would you still invest
+  1–2 years in learning full-stack development?   I’m from a developing
+  country\, have a non-CS background\, and plan to learn through The Odin P
+ roject\, followed by JavaScript/TypeScript\, React\, Node.js\, databases\,
+  APIs\, deployment\, and real projects. My long-term goal is remote work o
+ r Freelance\, b\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareer
+ questions/comments/1v8wv7u/is_it_wise_to_invest_12_years_learning_fullstac
+ k/\nRelevance score: 5.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v8wv7u/is_it_wise
+ _to_invest_12_years_learning_fullstack/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] 2 years as a security consultant.. what should my next 
+ move be?
+DTSTART;VALUE=DATE:20280803
+DTEND;VALUE=DATE:20280804
+DTSTAMP:20260803T005809Z
+UID:0cffac7ffe68b4d1-deadline@intern-tracker
+DESCRIPTION:2 years as a security consultant.. what should my next move be
+ ?\nHello! I&#39\;ve been working as a security consultant as a college gra
+ d for the past 2 years mainly doing work with SailPoint IIQ/ISC and Entra 
+ IAM. I&#39\;ve been onboarding applications to SailPoint \, developing joi
+ ner/leaver and access request / certification workflows.    My company has
+  been bought out in recent years and it&#39\;s been clear raises/promotion
+ s are not on the table. Most of the people I&#39\;ve come on with have all
+ \n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comme
+ nts/1uvwvuo/2_years_as_a_security_consultant_what_should_my/\nRelevance sc
+ ore: 4.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1uvwvuo/2_years_as
+ _a_security_consultant_what_should_my/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] 20 YOE backend/Java/AWS engineer trying to move into Ap
+ plied AI Engineering. Sanity check my plan + course reviews?
+DTSTART;VALUE=DATE:20460803
+DTEND;VALUE=DATE:20460804
+DTSTAMP:20260803T005809Z
+UID:16f0ea0d63876387-deadline@intern-tracker
+DESCRIPTION:20 YOE backend/Java/AWS engineer trying to move into Applied A
+ I Engineering. Sanity check my plan + course reviews?\nI have been a backe
+ nd engineer for about 20 years\, mostly Java and AWS. I want to move into 
+ AI engineering work\, example building agents\, RAG\, LLM powered features
+ . I am specifically not trying to get into classical ML or training models
+ \, and I know I can&#39\;t out compete new grads on the math/theory side. 
+ My bet is that my production experience is worth more than theirs in this 
+ s\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comm
+ ents/1v8kql2/20_yoe_backendjavaaws_engineer_trying_to_move/\nRelevance sco
+ re: 4.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v8kql2/20_yoe_bac
+ kendjavaaws_engineer_trying_to_move/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Do you guys believe I am able to find work with this cu
+ rrent programming experience?
+DTSTART;VALUE=DATE:20320703
+DTEND;VALUE=DATE:20320704
+DTSTAMP:20260803T005809Z
+UID:993c741f8633c41a-deadline@intern-tracker
+DESCRIPTION:Do you guys believe I am able to find work with this current p
+ rogramming experience?\nI would appreciate some honest advice about my pro
+ gramming career and how I should move forward as I feel very lost and am s
+ truggling with my own skills. I am wondering if I can even find another jo
+ b...   I am currently 28 years old and do not have a university degree. I 
+ can understand code and make changes with guidance\, but I still struggle 
+ to design and implement complete features independently. I am now goin\n\n
+ Source: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comments/
+ 1vb6t25/do_you_guys_believe_i_am_able_to_find_work_with/\nRelevance score:
+  4.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1vb6t25/do_you_guy
+ s_believe_i_am_able_to_find_work_with/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Thoughts on extending graduation to get an extra intern
+ ship?
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20260803T005809Z
+UID:fc223ae65f2106bc-deadline@intern-tracker
+DESCRIPTION:Thoughts on extending graduation to get an extra internship?\n
+ Hey all\,   I was able to secure a SWE internship for the summer after my 
+ second year\, but wasn&#39\;t able to secure one for this summer (summer a
+ fter my third year).    I was given the option by a friend of mine who was
+  in the same situation as me two years ago to try to extend graduation to 
+ get another cycle of internships. I have heard that there is a big differe
+ nce between having just one internship on your resume as opposed to two.\n
+ \nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comment
+ s/1txo8yx/thoughts_on_extending_graduation_to_get_an_extra/\nRelevance sco
+ re: 4.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1txo8yx/thoughts_o
+ n_extending_graduation_to_get_an_extra/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] New dev job basically has me just supervising Claude bu
+ t means I'm not learning anything.
+DTSTART;VALUE=DATE:20340803
+DTEND;VALUE=DATE:20340804
+DTSTAMP:20260803T005809Z
+UID:c8eb08124ce2a22e-deadline@intern-tracker
+DESCRIPTION:New dev job basically has me just supervising Claude but means
+  I'm not learning anything.\nFor the past 8 years or so I&#39\;ve coded on
+  the side as a hobby whenever I wasn&#39\;t working (I&#39\;m in my late 3
+ 0s now). But because I&#39\;d only pick it up so infrequently\, I&#39\;d b
+ asically start from scratch every time I came back to it. Over the past ye
+ ar though I&#39\;ve been studying on an AI/ML engineering course and aimin
+ g for junior positions.   I recently applied for a junior ML role at a com
+ pa\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/com
+ ments/1v5a37p/new_dev_job_basically_has_me_just_supervising/\nRelevance sc
+ ore: 4.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v5a37p/new_dev_jo
+ b_basically_has_me_just_supervising/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Advice pivoting into firmware/embedded systems dev from
+  early career software/webdev?
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+DTSTAMP:20260803T005809Z
+UID:6a50ec03783afbab-deadline@intern-tracker
+DESCRIPTION:Advice pivoting into firmware/embedded systems dev from early 
+ career software/webdev?\nHi! I&#39\;m a early career software engineer\, l
+ ooking for advice pivoting from software consulting and webdev to get into
+  firmware/embedded systems - ideally with a product company.    I&#39\;m 2
+ 5\, graduated 2 years ago with BE(Hons) in software engineering (unofficia
+ l specialization in machine learning and static checking). I have 3 years 
+ experience in engineering\, but due to the volatility of the industry the 
+ \n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comme
+ nts/1v1qhtp/advice_pivoting_into_firmwareembedded_systems_dev/\nRelevance 
+ score: 4.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v1qhtp/advice_piv
+ oting_into_firmwareembedded_systems_dev/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Turn on internship alerts →
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T005809Z
+UID:3fba6304ed98485f-deadline@intern-tracker
+DESCRIPTION:Turn on internship alerts →\n> 🚨 **Apply early.** Get a f
+ ree email when a new internship opens: [Turn on internship alerts →](htt
+ ps://applyguy.ai/internships?utm_source=github&utm_medium=repository&utm_c
+ ampaign=internships)\n\nSource: github\nLink: https://applyguy.ai/internsh
+ ips?utm_source=github&utm_medium=repository&utm_campaign=internships\nRele
+ vance score: 4.0
+URL:https://applyguy.ai/internships?utm_source=github&utm_medium=repositor
+ y&utm_campaign=internships
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] AI is Forcing Developers Into Entrepreneurship or Open 
+ Source
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20260803T005809Z
+UID:ebc5034e2c5b8ac3-deadline@intern-tracker
+DESCRIPTION:AI is Forcing Developers Into Entrepreneurship or Open Source\
+ ntl\;dr AI is setting people free from monotonous work. Data Science was a
+  way out into something new around 2015-2022\, but now all fields are satu
+ rated with automated coding.   If you don&#39\;t like the title then you p
+ robably won&#39\;t like my take\; however\, people talk about &quot\;I don
+ &#39\;t like sweeping up AI code&quot\;\, ok then write open source softwa
+ re. If you are so keen on your abilities then produce libs and apis that p
+ eople\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/
+ comments/1urx3i9/ai_is_forcing_developers_into_entrepreneurship_or/\nRelev
+ ance score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1urx3i9/ai_is_forc
+ ing_developers_into_entrepreneurship_or/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] How I blew my coding test and had a therapeutic convers
+ ation
+DTSTART;VALUE=DATE:20360803
+DTEND;VALUE=DATE:20360804
+DTSTAMP:20260803T005809Z
+UID:9b20f7e96e0e9267-deadline@intern-tracker
+DESCRIPTION:How I blew my coding test and had a therapeutic conversation\n
+ tl\;dr at bottom   My brief overview is that I have multiple degrees inclu
+ ding a graduate CS degree with published research\, a decade of experience
+  at a large finance firm in NYC\, as well as some smaller solo stuff. Gene
+ rally extremely friendly and helpful guy who gets along well with everyone
+ . If the team wins the company wins\, which hopefully means bonuses and ra
+ ises\, which means we all win.   I&#39\;ve been looking for work in the wo
+ r\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comm
+ ents/1v3xg72/how_i_blew_my_coding_test_and_had_a_therapeutic/\nRelevance s
+ core: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v3xg72/how_i_blew
+ _my_coding_test_and_had_a_therapeutic/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Deloitte Java Developer (3+ YOE) – Need Insights for 
+ Managerial/Techno-Managerial (R3) & Client Round (R4)
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+DTSTAMP:20260803T005809Z
+UID:f185780061da8656-deadline@intern-tracker
+DESCRIPTION:Deloitte Java Developer (3+ YOE) – Need Insights for Manager
+ ial/Techno-Managerial (R3) & Client Round (R4)\nHi everyone\,   I have upc
+ oming interview rounds with Deloitte for a Java Backend Developer (3+ year
+ s of experience) role.   I have already cleared the earlier technical roun
+ ds\, and my next interviews are expected to be:   Round 3: Managerial / Te
+ chno-Managerial   Round 4: Client Round   The interview invite shows a pan
+ el interview\, and I&#39\;m trying to understand what to expect in these r
+ o\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comm
+ ents/1ujingm/deloitte_java_developer_3_yoe_need_insights_for/\nRelevance s
+ core: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1ujingm/deloitte_j
+ ava_developer_3_yoe_need_insights_for/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] AI rant - I don't feel valuable anymore.
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+DTSTAMP:20260803T005809Z
+UID:a668a693b0773012-deadline@intern-tracker
+DESCRIPTION:AI rant - I don't feel valuable anymore.\nI&#39\;m a senior en
+ gineer and an AI skeptic\, or atleast I was util I started realizing its p
+ otential.   Problem 1: In our project when we setup microservices\, we are
+  required to setup environment variables. The name of the variable is eazy
+  to get wrong due to the way we have setup our project - the microservice 
+ declares the variable which contains the AWS Secret ARN and one of the 2 h
+ omegrown npm packages feches the secret and sets the value on another va\n
+ \nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comment
+ s/1ugz954/ai_rant_i_dont_feel_valuable_anymore/\nRelevance score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1ugz954/ai_rant_i_
+ dont_feel_valuable_anymore/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] What's the general picture of the job market for an SWE
+  with 6 years of experience
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+DTSTAMP:20260803T005809Z
+UID:da0f6aa7df2207ae-deadline@intern-tracker
+DESCRIPTION:What's the general picture of the job market for an SWE with 6
+  years of experience\nDeep south\, United States.   6 years of experience\
+ , two promotions\, have always had good performance reviews\, have worked 
+ under four different managers. I&#39\;ve done a little bit of everything a
+ t this point. Database\, service layer\, front-end\, and I also have an AW
+ S developer certification.    Is the job market as ghoulish for those like
+  me as it is for new grads?     &#32\; submitted by &#32\;   /u/murrayhitc
+ hock \n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/
+ comments/1ugbbp3/whats_the_general_picture_of_the_job_market_for/\nRelevan
+ ce score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1ugbbp3/whats_the_
+ general_picture_of_the_job_market_for/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Confused about what future path I should choose
+DTSTART;VALUE=DATE:20320803
+DTEND;VALUE=DATE:20320804
+DTSTAMP:20260803T005809Z
+UID:f1499609a08605ba-deadline@intern-tracker
+DESCRIPTION:Confused about what future path I should choose\nI’m a CS ju
+ nior and genuinely don’t know what career opportunity I should go for. I
+  am from a developing country\, and there aren’t many opportunities of i
+ nternships. I keep doing research on different career options and just kee
+ p getting confused. My question may come out extremely stupid\, but how do
+  I decide where to specify? What are the most beginner friendly options? A
+ re there any skills that are necessary no matter what I chose?     &#32\; 
+ subm\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/c
+ omments/1vbyarw/confused_about_what_future_path_i_should_choose/\nRelevanc
+ e score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1vbyarw/confused_a
+ bout_what_future_path_i_should_choose/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Another degree vs experience/projects
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20260803T005809Z
+UID:93fb681d6558b08f-deadline@intern-tracker
+DESCRIPTION:Another degree vs experience/projects\nHey everyone\,   I know
+  the industry is tough right now but I’m just looking for some advice on
+  how to move forward in pursuing a SWE related career.   Some background o
+ n me:   Got my Bachelors in Business Admin out of high-school at my local 
+ university\, worked some office jobs but mostly worked as a server through
+  my 20s because the money was good and never found a passion for business 
+ related jobs I was getting.   When I was 27 I decided to go back to schoo\
+ n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/commen
+ ts/1v2z05o/another_degree_vs_experienceprojects/\nRelevance score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v2z05o/another_de
+ gree_vs_experienceprojects/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Looking for 5 more people to test my ML learning app (b
+ efore release)
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+DTSTAMP:20260803T005809Z
+UID:1c512ac195c9e7be-deadline@intern-tracker
+DESCRIPTION:Looking for 5 more people to test my ML learning app (before r
+ elease)\nHi everyone!   Quick intro: I finished my PhD last year and have 
+ bounced between various industry jobs during and after (some big tech and 
+ some smaller startups). Recently I made the jump back to academia\, and I&
+ #39\;m currently a visiting professor. Mostly because I missed teaching\, 
+ helping students\, and wanted to get back to actual research instead of th
+ e &quot\;scale it up and tweak the data mix&quot\; work most companies do 
+ t\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comm
+ ents/1uxxc1e/looking_for_5_more_people_to_test_my_ml_learning/\nRelevance 
+ score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1uxxc1e/looking_fo
+ r_5_more_people_to_test_my_ml_learning/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Looking for 5 people to test my ML/AI learning app (ear
+ ly version)
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+DTSTAMP:20260803T005809Z
+UID:7b7827e998525746-deadline@intern-tracker
+DESCRIPTION:Looking for 5 people to test my ML/AI learning app (early vers
+ ion)\nHey everyone!   Quick intro: I finished my PhD last year and have bo
+ unced between various industry jobs during and after (some big tech and so
+ me smaller startups). Recently I made the jump back to academia\, and I&#3
+ 9\;m currently a visiting professor. Mostly because I missed teaching\, he
+ lping students\, and wanted to get back to actual research instead of the 
+ &quot\;scale it up and tweak the data mix&quot\; work most companies do th
+ e\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comm
+ ents/1usi0fv/looking_for_5_people_to_test_my_mlai_learning_app/\nRelevance
+  score: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1usi0fv/looking_fo
+ r_5_people_to_test_my_mlai_learning_app/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Any good must-have computer science audiobooks to liste
+ n to? Or podcasts? Especially for listening to during the gym?
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20260803T005809Z
+UID:af0d4c473560500d-deadline@intern-tracker
+DESCRIPTION:Any good must-have computer science audiobooks to listen to? O
+ r podcasts? Especially for listening to during the gym?\nAnything relating
+  to computer science\, software engineering or web development. Would be n
+ ice to branch into niche topics and become acquainted with more specialize
+ d technologies\, concepts or subfields.   I want to csmaxx and I have some
+  free time during my workouts to listen to something. I&#39\;d hope for so
+ mething digestible that doesn&#39\;t take a pen and paper (or compiler) t\
+ n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/commen
+ ts/1u6y53q/any_good_musthave_computer_science_audiobooks_to/\nRelevance sc
+ ore: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1u6y53q/any_good_m
+ usthave_computer_science_audiobooks_to/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] AI Boom made me lose faith in my field and I don't know
+  what to do.
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+DTSTAMP:20260803T005809Z
+UID:72a077e5679d1369-deadline@intern-tracker
+DESCRIPTION:AI Boom made me lose faith in my field and I don't know what t
+ o do.\nHi everyone. I&#39\;m a 3rd year Computer Engineering (which is jus
+ t CS with 2 3 hardware courses in my uni) student and I have my doubts abo
+ ut the future. I always loved working with computers and tech and everyone
+  kinda knew I&#39\;d go down this path to become a CS guy. I could&#39\;ve
+  picked many fields with way better pay and more job security(like medicin
+ e for example) with my college entrance exam results yet I picked CE bec\n
+ \nSource: reddit\nLink: https://www.reddit.com/r/cscareerquestions/comment
+ s/1tylsoc/ai_boom_made_me_lose_faith_in_my_field_and_i_dont/\nRelevance sc
+ ore: 3.5
+URL:https://www.reddit.com/r/cscareerquestions/comments/1tylsoc/ai_boom_ma
+ de_me_lose_faith_in_my_field_and_i_dont/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Which language should I learn as a junior?
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+DTSTAMP:20260803T024258Z
+UID:43575bd67646b85c-deadline@intern-tracker
+DESCRIPTION:I am a junior remote developer wondering which free language t
+ o learn as a student\, any career advice?\n\nSource: reddit\nLink: https:/
+ /reddit.com/r/regtest2\nRelevance score: 6.5
+URL:https://reddit.com/r/regtest2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Looking for Java Backend Developer Referrals (3+ Years 
+ Experience)
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+DTSTAMP:20260803T031916Z
+UID:472ba9e31ad78208-deadline@intern-tracker
+DESCRIPTION:Looking for Java Backend Developer Referrals (3+ Years Experie
+ nce)\nHi everyone\,   I&#39\;m currently looking for Java Backend Develope
+ r opportunities (3+ years experience) and would really appreciate any refe
+ rrals.   About me:   * 3+ years of experience in Java Backend Development 
+   * Tech Stack: Java\, Spring Boot\, Microservices\, REST APIs\, Kafka\, P
+ ostgreSQL\, MySQL\, AWS (S3\, CloudWatch\, Glue\, Athena)\, Git\, Maven   
+ * Experience in building scalable backend services\, event-driven architec
+ tures\, and\n\nSource: reddit\nLink: https://www.reddit.com/r/cscareerques
+ tions/comments/1v2g8dn/looking_for_java_backend_developer_referrals_3/\nRe
+ levance score: 3.0
+URL:https://www.reddit.com/r/cscareerquestions/comments/1v2g8dn/looking_fo
+ r_java_backend_developer_referrals_3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Free AWS certification challenge test 3
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+DTSTAMP:20260803T033046Z
+UID:f4af4187bf54d026-deadline@intern-tracker
+DESCRIPTION:AWS is offering a free certification challenge #3 for students
+  worldwide\, remote\, no experience needed\, no citizenship restriction. D
+ eadline: September 13\, 2026.\n\nSource: reddit\nLink: https://reddit.com/
+ r/pacetest3\nRelevance score: 9.5
+URL:https://reddit.com/r/pacetest3
+END:VEVENT
+END:VCALENDAR
