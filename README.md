@@ -15,7 +15,7 @@ the keyword filter, and 40 were new. See `data/opportunities.ics` and
 ## How it works
 
 ```
-sources/          -> fetch raw candidates (Reddit, Devpost, GitHub)
+sources/          -> fetch raw candidates (Reddit, Devpost, GitHub, Hacker News)
 processing/        -> keyword-score + filter (cheap first pass), then
                        Gemini extracts clean structured fields for whatever
                        survives the filter (falls back to the old
@@ -31,13 +31,16 @@ bot/               -> optional 24/7 alternative: same run_pipeline(), but with
                        interactive Telegram buttons instead of plain text
 ```
 
-### Data sources (why these three)
+### Data sources
 
 | Source | What it covers | How |
 |---|---|---|
-| **Reddit** (`sources/reddit_source.py`) | Community-shared postings in r/cscareerquestions, r/csMajors, r/developersIndia, etc. | Public `search.rss` feed, no credentials — Reddit closed self-service API app registration in 2026 (see comment at top of the file). Paced with a backoff + a hard 240s time budget per run so an unusually strict rate-limit day can't eat the whole CI job — it just returns whatever it collected and lets Devpost/GitHub still run. |
+| **Reddit** (`sources/reddit_source.py`) | Community-shared postings in r/cscareerquestions, r/csMajors, r/developersIndia, etc. | Public `search.rss` feed, no credentials — Reddit closed self-service API app registration in 2026 (see comment at top of the file). Paced with a backoff + a hard 240s time budget per run so an unusually strict rate-limit day can't eat the whole CI job — it just returns whatever it collected and lets the other sources still run. |
 | **Devpost** (`sources/devpost_source.py`) | Online hackathons, open for submissions | Devpost's own search JSON endpoint (undocumented but public — fails soft if it ever changes) |
-| **GitHub** (`sources/github_source.py`) | Curated "free certifications" / "internships" / "open source programs" list repos | GitHub Search API, by **topic** (not a hardcoded repo name — so it keeps discovering new/renamed lists instead of going stale) |
+| **GitHub** (`sources/github_source.py`) | Curated "free certifications" / "internships" / "open source programs" list repos, **plus** the SimplifyJobs/PittCSC curated internship list (jointly maintained — same repo) targeted directly | GitHub Search API, by **topic** for the general lists (not a hardcoded repo name, so it self-updates) — the curated internship list is found by searching *within* the `SimplifyJobs` org for a repo matching `Summer<year>-Internships`/`New-Grad-Positions`, since it gets renamed every recruiting season. Handles both markdown-link and raw-HTML-table README formats. |
+| **Hacker News** (`sources/hackernews_source.py`) | Real internship/entry-level openings from the monthly "Ask HN: Who is hiring?" thread | Official Algolia HN Search API (`hn.algolia.com`) — free, no auth. Found by searching for stories from the `whoishiring` account (not fuzzy title matching, so it can't accidentally grab that day's "Who wants to be hired?" sibling thread). |
+
+**Investigated but not integrated** (no free/stable public API found, or only third-party/paid scrapers exist — see the project's no-scraping principle): MLH's own event list (only OAuth login API, official), HackerEarth, Google Summer of Code (project-level, not org-level), Outreachy, LFX Mentorship, Microsoft Learn/Google Cloud Skills Boost/AWS Educate challenge pages, Wellfound. Devpost already covers a lot of MLH-run hackathons since many are hosted there.
 
 ### Filtering
 
@@ -51,20 +54,38 @@ Cloud, GitHub...). Negative signals: tuition/fees, in-person-only,
 US-citizens-only, senior-only. Tune `MIN_SCORE` and the keyword weights any
 time — nothing else needs to change.
 
-### Smart parsing (Google Gemini)
+### Smart parsing + QA/prestige gatekeeper (Google Gemini)
 
 `processing/llm_parser.py` sends each *new* (already keyword-filtered)
-opportunity to Gemini with a strict JSON response schema, extracting:
-`program_name`, `application_link`, `eligibility`, `deadline`,
-`announcement_date`, `summary`. Whatever date strings come back are
-normalized to `YYYY-MM-DD` with `dateparser`. Free API key:
-https://aistudio.google.com/apikey.
+opportunity to Gemini with a strict JSON response schema. Gemini first
+classifies it as one of:
+- **TYPE A** — a program (certification/scholarship/bootcamp/hackathon/
+  fellowship): must be run by a reputable organizer, genuinely free/fully
+  funded, remote/global, with a legitimate link.
+- **TYPE B** — a genuine internship/entry-level job actually **offered by
+  an employer** (e.g. an HN "who is hiring" post, or a curated internship
+  repo entry): must name a real company, be junior/entry-level (being paid
+  is normal here — TYPE A's "free" rule doesn't apply to employment), and
+  not obviously closed to a Turkey-based applicant.
+- Neither — general discussion, questions, news, or **an individual asking
+  for a job/referral for themselves** (distinct from an employer's own
+  posting) — always rejected.
 
-If `GEMINI_API_KEY` isn't set, or a call fails for any reason, that one
-opportunity silently falls back to the old `processing/date_parser.py`
-trigger-word heuristic — same fail-soft pattern as every other integration
-here. Either way every opportunity still carries its `raw_text` and link,
-so nothing is ever "trust the AI blindly."
+Only if valid does it extract `program_name`, `application_link`,
+`eligibility`, `deadline`/`deadline_time`/`deadline_timezone` (converted to
+Europe/Istanbul — see below), `announcement_date`, `summary`, and a Turkish
+`turkish_cv_summary`. Free API key: https://aistudio.google.com/apikey
+(the default model is the `-lite` variant — the full `flash` model's free
+tier tops out at 20 requests/**day**, project-wide, nowhere near enough for
+daily volume).
+
+Retries transient errors (429/503/timeouts) a few times with backoff before
+giving up. If it still can't get an answer — bad key, persistent outage,
+whatever — the opportunity is **rejected**, not assumed valid. An earlier
+version defaulted an unreachable LLM to "keep it," which is exactly how an
+unrelated job-referral Reddit post once slipped past the gatekeeper and got
+broadcast as a "new opportunity"; nothing ships unless Gemini actually
+verified it.
 
 ### Notion pipeline
 
@@ -82,13 +103,23 @@ auto-creates the database's schema for you — see the comment at the top of
 `integrations/notion_sync.py` for the precise steps if you're doing it
 without the script.
 
+### Notion dedup (never a duplicate "new opportunity" alert)
+
+Before pushing anything new, `find_existing_notion_page()` also checks
+Notion itself for a matching Application Link or Name — on top of the
+cheap local `data/seen.json` check. Notion is the source of truth: even if
+local state were ever lost, reset, or out of sync, the same opportunity
+still can't trigger a second "new opportunity" broadcast.
+
 ### Result-day reminders & 10-day deadline countdown
 
-Every daily run also queries Notion for anything whose **Announcement
-Date** is today (a "results might be out" nudge), and separately for
-anything whose **Deadline** (or **Start Date**, if there's no fixed
-deadline) is 1-10 days away — repeating daily until the window passes, so
-a time-sensitive deadline can't get buried under newer notifications.
+Every run also queries Notion for anything whose **Announcement Date** is
+today (a "results might be out" nudge), and separately for anything that's
+still `Status = "New"` (i.e. you haven't clicked "✅ Başvurdum" yet) whose
+**Deadline** (or **Start Date**, if there's no fixed deadline) is 1-10 days
+away — repeating daily until the window passes *or* you apply, whichever
+comes first, so a time-sensitive deadline can't get buried under newer
+notifications without turning into spam after you've already acted on it.
 
 ### Timezone conversion (deadlines in TR time)
 
@@ -102,15 +133,36 @@ Telegram message show the converted time labeled "(TR Saatiyle)".
 ### Interactive bot (optional): buttons that update Notion for you
 
 `bot/` is a 24/7 alternative to the plain GitHub Actions cron: it polls
-Telegram continuously so it can react to button taps, on top of running the
-same daily pipeline as `main.py` in the background.
+Telegram continuously so it can react to button taps and slash commands,
+on top of running two independent background jobs (`bot/scheduler.py`),
+both anchored to Europe/Istanbul via `JobQueue.run_daily` (itself an
+APScheduler `AsyncIOScheduler` + `CronTrigger` under the hood):
 
+- **Opportunity Hunter** — scrape → gatekeeper → Notion → broadcast. Runs
+  **twice a day** (09:00 & 21:00) so a limited-quota program doesn't sit
+  undiscovered for 12+ hours. Also triggerable on demand with `/tara`
+  (shares the exact same code, `hunt_and_broadcast()`).
+- **Morning Briefing** — result-day + 10-day countdown reminders only, from
+  what's already in Notion. Runs **once a day, 09:00 only** — deliberately
+  not registered for the evening slot too, so reminders can't double up.
+
+Buttons:
 - **New opportunity** messages get an inline **✅ Başvurdum** button —
   tapping it sets that page's Notion `Status` to `Applied` and edits the
   message to confirm.
 - **Result-day** reminders get **🎉 Kabul Edildim** / **❌ Reddedildim**
   buttons that set `Status` to `Accepted`/`Rejected` the same way.
-- **`/basvurularim`** lists everything currently `Applied`.
+
+Commands (also registered with Telegram's native menu button via
+`set_my_commands()` — see `bot/app.py`):
+
+| Command | What it does |
+|---|---|
+| `/yardim` or `/start` | Lists every command |
+| `/tara` | Force-runs the Opportunity Hunter immediately |
+| `/bekleyenler` | Everything still `Status="New"` with a future deadline |
+| `/basvurularim` | Everything currently `Status="Applied"` |
+| `/rapor` | A stats dashboard (counts per Status) |
 
 A Notion page id is embedded in each button's `callback_data` (safe to do —
 see the comment at the top of `bot/keyboards.py`), and every handler
