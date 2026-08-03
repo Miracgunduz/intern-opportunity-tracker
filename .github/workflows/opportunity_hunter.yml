@@ -10,6 +10,16 @@ on:
 permissions:
   contents: write  # needed to commit data/seen.json + data/opportunities.ics back
 
+# A scheduled run and a /tara-triggered run can otherwise overlap (verified
+# live: two concurrent runs both pushed to data/seen.json and the second's
+# push was rejected as non-fast-forward, silently losing that run's "seen"
+# state — which would have re-notified about the same opportunities the
+# next day). This serializes runs instead of cancelling either one: the
+# second just waits for the first to finish before starting.
+concurrency:
+  group: opportunity-hunter
+  cancel-in-progress: false
+
 jobs:
   hunt:
     runs-on: ubuntu-latest
@@ -41,5 +51,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/seen.json data/opportunities.ics
-          git diff --cached --quiet || git commit -m "chore: opportunity hunt $(date -u +%Y-%m-%dT%H:%M)"
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: opportunity hunt $(date -u +%Y-%m-%dT%H:%M)"
+          # Belt-and-suspenders on top of the concurrency lock above: retry
+          # once with a rebase if main moved between checkout and push (e.g.
+          # a manual push to main at the wrong moment).
+          for attempt in 1 2; do
+            git push && exit 0
+            git pull --rebase origin main
+          done
           git push
