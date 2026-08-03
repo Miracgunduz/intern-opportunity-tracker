@@ -82,27 +82,29 @@ async def run_opportunity_hunter(context: ContextTypes.DEFAULT_TYPE) -> None:
     log.info("Opportunity Hunter: %d new opportunities broadcast", count)
 
 
-async def run_morning_briefing(context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Task 2 — 'Morning Briefing'. Notion-only reminders: result-day
-    (Announcement Date == today) and the Status="New" T-minus-10 deadline
-    countdown. No scraping/gatekeeping here — this only reads what
-    run_opportunity_hunter already wrote to Notion.
-    """
-    chat_id = os.environ["TELEGRAM_CHAT_ID"]
-    log.info("Morning Briefing: checking Notion for reminders...")
+async def send_morning_briefing(bot: Bot, chat_id: str) -> int:
+    """The actual Morning Briefing work: result-day (Announcement Date ==
+    today) + the Status="New" T-minus-10 deadline countdown, read straight
+    from Notion — no scraping/gatekeeping here, this only reads what
+    hunt_and_broadcast already wrote. Returns how many reminders were sent.
 
+    Shared by the scheduled run_morning_briefing job and (potentially) a
+    standalone runner script — same pattern as hunt_and_broadcast above.
+    """
+    sent = 0
     for item in check_todays_announcements():
         if not item.get("page_id"):
             continue
         title = html.escape(item["title"])
         text = f'🎉 Sonuç günü! <b>{title}</b> için sonuçlar açıklanmış olabilir.\n{item["url"]}'
-        await context.bot.send_message(
+        await bot.send_message(
             chat_id=chat_id,
             text=text,
             parse_mode="HTML",
             disable_web_page_preview=True,
             reply_markup=result_keyboard(item["page_id"]),
         )
+        sent += 1
 
     for m in check_deadline_countdowns():
         title = html.escape(m["title"])
@@ -112,8 +114,19 @@ async def run_morning_briefing(context: ContextTypes.DEFAULT_TYPE) -> None:
         if m.get("turkish_cv_summary"):
             lines.append("")
             lines.append(f"🇹🇷 {html.escape(m['turkish_cv_summary'])}")
-        await context.bot.send_message(
+        await bot.send_message(
             chat_id=chat_id, text="\n".join(lines), parse_mode="HTML", disable_web_page_preview=True
         )
+        sent += 1
 
-    log.info("Morning Briefing: done.")
+    return sent
+
+
+async def run_morning_briefing(context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Task 2 — 'Morning Briefing' scheduled job (09:00 Europe/Istanbul only).
+    No scraping/gatekeeping here — see run_opportunity_hunter for that, on
+    its own separate schedule."""
+    chat_id = os.environ["TELEGRAM_CHAT_ID"]
+    log.info("Morning Briefing: checking Notion for reminders...")
+    sent = await send_morning_briefing(context.bot, chat_id)
+    log.info("Morning Briefing: done, %d reminder(s) sent.", sent)

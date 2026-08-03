@@ -1,16 +1,17 @@
-name: Daily opportunity scan
+name: Opportunity Hunter
 
 on:
   schedule:
-    # 07:00 UTC = 10:00 Türkiye (UTC+3). Adjust to taste.
-    - cron: "0 7 * * *"
-  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+    # 06:00 & 18:00 UTC = 09:00 & 21:00 Europe/Istanbul.
+    - cron: "0 6 * * *"
+    - cron: "0 18 * * *"
+  workflow_dispatch: {}  # triggered on-demand by the /tara Telegram command (see webhook/app.py)
 
 permissions:
   contents: write  # needed to commit data/seen.json + data/opportunities.ics back
 
 jobs:
-  scan:
+  hunt:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +23,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run daily scan
+      - name: Run Opportunity Hunter (scrape -> gatekeeper -> Notion -> broadcast)
         env:
+          MANUAL_TRIGGER: ${{ github.event_name == 'workflow_dispatch' }}  # true only for the /tara-triggered run
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # auto-provided by Actions, no setup needed
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
@@ -33,12 +34,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: python main.py
+        run: python -m scripts.run_opportunity_hunter
 
       - name: Commit updated state + calendar feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/seen.json data/opportunities.ics
-          git diff --cached --quiet || git commit -m "chore: daily opportunity scan $(date -u +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "chore: opportunity hunt $(date -u +%Y-%m-%dT%H:%M)"
           git push

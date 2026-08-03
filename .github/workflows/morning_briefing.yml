@@ -1,0 +1,30 @@
+name: Morning Briefing
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 Europe/Istanbul — deliberately once a day only, not
+    # also at the Opportunity Hunter's evening slot, so reminders can't
+    # double up and cause notification fatigue.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send Morning Briefing (result-day + deadline countdown reminders)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python -m scripts.run_morning_briefing
