@@ -42,6 +42,15 @@ _CURATED_NAME_PATTERNS = (
 # Matches a markdown link: [link text](https://example.com)
 _LINK_RE = re.compile(r"\[([^\]]{3,120})\]\((https?://[^\s)]+)\)")
 
+# Some curated internship-list READMEs (verified live: SimplifyJobs/PittCSC's
+# lists) render their table as raw HTML rather than markdown pipe-tables —
+# <tr><td>Company</td><td>Role</td><td>Location</td><td>...apply links...</td></tr>
+# — which _LINK_RE's markdown-only syntax can't see at all.
+_TABLE_ROW_RE = re.compile(r"<tr>(.*?)</tr>", re.DOTALL | re.IGNORECASE)
+_TABLE_CELL_RE = re.compile(r"<td>(.*?)</td>", re.DOTALL | re.IGNORECASE)
+_ANCHOR_HREF_RE = re.compile(r'<a\s+[^>]*href="([^"]+)"', re.IGNORECASE)
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+
 # Curated-list READMEs are full of shields.io/badge-style images used as
 # decoration (stat counters, "PRs welcome" banners, etc.) — these match the
 # same [text](url) syntax as real links but aren't opportunities.
@@ -117,16 +126,61 @@ def _fetch_readme_text(full_name: str) -> str | None:
         return None
 
 
-def _extract_entries(readme_text: str, repo_full_name: str) -> list[Opportunity]:
-    """Pull one Opportunity per markdown link found, using its source line
-    (table row or list item) as context for filtering/date-parsing.
+def _extract_html_table_rows(readme_text: str, repo_full_name: str) -> list[Opportunity]:
+    """Parses raw HTML <table> rows: Company | Role | Location | Application
+    (icon links) | Age. The Application cell typically has the real
+    employer/ATS apply link first, then a tracking-site icon link second —
+    the first <a href> is the one worth keeping."""
+    entries: list[Opportunity] = []
+    for row_match in _TABLE_ROW_RE.finditer(readme_text):
+        cells = _TABLE_CELL_RE.findall(row_match.group(1))
+        if len(cells) < 3:
+            continue  # not a data row (header, malformed, or a nested table)
 
-    Works across both common curated-list formats:
-      - Markdown tables: | Name | Provider | ... | [Link](url) | Expiry |
-      - Bullet lists:    - [Name](url) — free, remote, ends March 2026
+        company = _HTML_TAG_RE.sub(" ", cells[0]).strip()
+        role = _HTML_TAG_RE.sub(" ", cells[1]).strip() if len(cells) > 1 else ""
+        location = _HTML_TAG_RE.sub(" ", cells[2]).strip() if len(cells) > 2 else ""
+        if not company or company.lower() == "company":
+            continue  # header row
+
+        apply_url = None
+        if len(cells) > 3:
+            anchor = _ANCHOR_HREF_RE.search(cells[3])
+            apply_url = anchor.group(1) if anchor else None
+        if not apply_url:
+            continue
+
+        entries.append(
+            Opportunity(
+                source="github",
+                title=f"{company} — {role}".strip(" —"),
+                url=apply_url,
+                raw_text=f"{company} {role} {location}".strip(),
+                extra={"repo": repo_full_name},
+            )
+        )
+        if len(entries) >= MAX_ENTRIES_PER_REPO:
+            break
+    return entries
+
+
+def _extract_entries(readme_text: str, repo_full_name: str) -> list[Opportunity]:
+    """Pull one Opportunity per link found, merged (deduped by URL) across
+    every curated-list format seen in the wild:
+      - Raw HTML tables:  <tr><td>Company</td><td>Role</td>...</tr>
+      - Markdown tables:  | Name | Provider | ... | [Link](url) | Expiry |
+      - Bullet lists:     - [Name](url) — free, remote, ends March 2026
     """
     entries: list[Opportunity] = []
     seen_urls: set[str] = set()
+
+    for entry in _extract_html_table_rows(readme_text, repo_full_name):
+        if entry.url in seen_urls:
+            continue
+        seen_urls.add(entry.url)
+        entries.append(entry)
+        if len(entries) >= MAX_ENTRIES_PER_REPO:
+            return entries
 
     for line in readme_text.splitlines():
         for match in _LINK_RE.finditer(line):
