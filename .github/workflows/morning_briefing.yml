@@ -2,10 +2,13 @@ name: Morning Briefing
 
 on:
   schedule:
-    # 06:00 UTC = 09:00 Europe/Istanbul — deliberately once a day only, not
+    # 06:15 UTC ≈ 09:15 Europe/Istanbul — deliberately once a day only, not
     # also at the Opportunity Hunter's evening slot, so reminders can't
-    # double up and cause notification fatigue.
-    - cron: "0 6 * * *"
+    # double up and cause notification fatigue. Offset 15 minutes past the
+    # hour (and clear of Opportunity Hunter's own :05 offset) since :00 is
+    # the most congested minute for GitHub's scheduler and was verified
+    # live to get silently skipped every time.
+    - cron: "15 6 * * *"
   workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
 
 jobs:

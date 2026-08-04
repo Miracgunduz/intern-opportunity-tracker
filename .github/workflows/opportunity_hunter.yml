@@ -2,9 +2,13 @@ name: Opportunity Hunter
 
 on:
   schedule:
-    # 06:00 & 18:00 UTC = 09:00 & 21:00 Europe/Istanbul.
-    - cron: "0 6 * * *"
-    - cron: "0 18 * * *"
+    # 06:05 & 18:05 UTC ≈ 09:05 & 21:05 Europe/Istanbul. Offset 5 minutes
+    # past the hour on purpose — GitHub's own docs warn that scheduled
+    # workflows queued for :00 are the most likely to be delayed or
+    # silently dropped under load; verified live (every :00 run for a full
+    # day was skipped, only manual workflow_dispatch runs ever fired).
+    - cron: "5 6 * * *"
+    - cron: "5 18 * * *"
   workflow_dispatch: {}  # triggered on-demand by the /tara Telegram command (see webhook/app.py)
 
 permissions:
