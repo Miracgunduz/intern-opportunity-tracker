@@ -34,12 +34,18 @@ from __future__ import annotations
 import html
 import logging
 import os
+from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 from flask import Flask, abort, request
 
-load_dotenv()
+# Explicit path rather than load_dotenv()'s default upward-search: WSGI
+# servers (PythonAnywhere included) often run with a working directory
+# that isn't the project root, so the no-argument form can silently fail
+# to find .env — verified live (every env var read back as unset until
+# this was made explicit).
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 from integrations import (
     get_status_counts,
