@@ -31,6 +31,7 @@ Set up the webhook once (from your own machine, not PythonAnywhere):
 """
 from __future__ import annotations
 
+import hmac
 import html
 import logging
 import os
@@ -225,3 +226,27 @@ def webhook():
 @app.route("/health", methods=["GET"])
 def health():
     return "ok"
+
+
+@app.route("/cron/trigger-hunt", methods=["GET", "POST"])
+def cron_trigger_hunt():
+    """Fires the Opportunity Hunter workflow — meant to be called by an
+    external free scheduler (e.g. cron-job.org), not GitHub's own `schedule:`
+    trigger. Verified live: GitHub's schedule trigger silently skipped two
+    consecutive daily windows on this repo despite a correctly configured,
+    long-since-pushed cron — a known reliability gap for low-traffic public
+    repos. workflow_dispatch (what this calls) fired correctly every single
+    time it was tried, so an external pinger just needs to hit this URL on
+    a schedule instead.
+
+    Auth is a shared secret (CRON_TRIGGER_SECRET) rather than Telegram's
+    signed-update mechanism, since the caller here is a plain HTTP cron
+    service with no equivalent of Telegram's secret-token header.
+    """
+    expected_secret = os.environ.get("CRON_TRIGGER_SECRET")
+    provided = request.args.get("token", "")
+    if not expected_secret or not hmac.compare_digest(provided, expected_secret):
+        abort(403)
+
+    ok = _trigger_opportunity_hunter_workflow()
+    return ("ok", 200) if ok else ("failed to trigger workflow", 502)
