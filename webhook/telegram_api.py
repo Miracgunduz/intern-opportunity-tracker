@@ -12,6 +12,8 @@ import os
 
 import requests
 
+from integrations.http_retry import post_with_retry
+
 log = logging.getLogger(__name__)
 
 REQUEST_TIMEOUT = 10
@@ -26,8 +28,8 @@ def answer_callback_query(callback_query_id: str) -> None:
     """Acks a button tap immediately — Telegram shows a loading spinner on
     the button until this fires."""
     try:
-        requests.post(_api_url("answerCallbackQuery"), json={"callback_query_id": callback_query_id},
-                      timeout=REQUEST_TIMEOUT)
+        post_with_retry(_api_url("answerCallbackQuery"), json={"callback_query_id": callback_query_id},
+                         timeout=REQUEST_TIMEOUT)
     except requests.RequestException as exc:
         log.warning("answerCallbackQuery failed: %s", exc)
 
@@ -43,7 +45,7 @@ def edit_message_text(chat_id: int | str, message_id: int, text: str, reply_mark
     if reply_markup is not None:
         payload["reply_markup"] = reply_markup
     try:
-        resp = requests.post(_api_url("editMessageText"), json=payload, timeout=REQUEST_TIMEOUT)
+        resp = post_with_retry(_api_url("editMessageText"), json=payload, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return True
     except requests.RequestException as exc:

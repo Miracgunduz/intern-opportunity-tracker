@@ -15,6 +15,8 @@ import requests
 
 from sources.base import Opportunity
 
+from .http_retry import post_with_retry
+
 log = logging.getLogger(__name__)
 REQUEST_TIMEOUT = 10
 MAX_ITEMS_IN_MESSAGE = 10
@@ -44,7 +46,7 @@ def send_telegram_text(text: str) -> bool:
         "disable_web_page_preview": True,
     }
     try:
-        resp = requests.post(url, json=payload, timeout=REQUEST_TIMEOUT)
+        resp = post_with_retry(url, json=payload, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return True
     except requests.RequestException as exc:
