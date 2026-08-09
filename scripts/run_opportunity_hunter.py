@@ -9,12 +9,13 @@ long-lived process to manage here.
 Run (from the repo root, so `bot`/`main` are importable):
     python -m scripts.run_opportunity_hunter
 
-If MANUAL_TRIGGER=true (set by .github/workflows/opportunity_hunter.yml
-only when it was fired by workflow_dispatch, i.e. the /tara command via
-webhook/app.py — never on the twice-daily schedule), also sends "no new
-opportunities" when the count is 0. On the scheduled runs this stays
-silent on 0, same as always — nobody wants a "nothing new" ping twice a
-day.
+Always sends something — new opportunities, or a "nothing new" message
+when the count is 0 — on every run, scheduled or manual (/tara). Originally
+the scheduled runs stayed silent on 0 ("nobody wants a 'nothing new' ping
+twice a day"), but that made a genuinely silent failure (delivery broken)
+indistinguishable from a quiet day (nothing qualified) — the user couldn't
+tell which one they were looking at. A message every run, even an empty
+one, doubles as a heartbeat.
 """
 from __future__ import annotations
 
@@ -43,7 +44,7 @@ async def main() -> int:
     count = await hunt_and_broadcast(bot, chat_id)
     log.info("Opportunity Hunter: %d new opportunities broadcast", count)
 
-    if count == 0 and os.environ.get("MANUAL_TRIGGER") == "true":
+    if count == 0:
         await bot.send_message(chat_id=chat_id, text="Şu an için yeni bir fırsat bulunamadı.")
 
     return 0

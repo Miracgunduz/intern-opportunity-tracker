@@ -39,7 +39,6 @@ jobs:
 
       - name: Run Opportunity Hunter (scrape -> gatekeeper -> Notion -> broadcast)
         env:
-          MANUAL_TRIGGER: ${{ github.event_name == 'workflow_dispatch' }}  # true only for the /tara-triggered run
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # auto-provided by Actions, no setup needed
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

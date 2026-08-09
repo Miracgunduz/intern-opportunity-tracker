@@ -24,7 +24,7 @@ Split responsibilities:
     the GitHub API (api.github.com is also allowlisted) and confirms the
     trigger; the actual "found N opportunities" / "nothing new" message
     arrives a little later, sent by that workflow run itself (see
-    scripts/run_opportunity_hunter.py's MANUAL_TRIGGER handling).
+    scripts/run_opportunity_hunter.py).
 
 Set up the webhook once (from your own machine, not PythonAnywhere):
     python -m webhook.register YOUR_PYTHONANYWHERE_URL/webhook
