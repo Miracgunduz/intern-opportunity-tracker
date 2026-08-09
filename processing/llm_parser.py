@@ -58,6 +58,7 @@ _RESPONSE_SCHEMA = {
     "type": "OBJECT",
     "properties": {
         "is_valid_opportunity": {"type": "BOOLEAN"},
+        "rejection_reason": {"type": "STRING"},
         "program_name": {"type": "STRING"},
         "application_link": {"type": "STRING"},
         "eligibility": {"type": "STRING"},
@@ -127,7 +128,11 @@ Also false (regardless of type) if this is general discussion, a question ("whic
 learn?", "is X worth it?"), career advice, news, a rant/opinion, or an individual seeking work/ \
 referrals for themselves rather than an org offering something.
 
-If is_valid_opportunity is false, return ONLY {{"is_valid_opportunity": false}} — no other keys.
+If is_valid_opportunity is false, return ONLY {{"is_valid_opportunity": false, "rejection_reason": "..."}} \
+— rejection_reason must be one short phrase naming exactly which check failed (e.g. "TYPE A: organizer \
+not a recognized/reputable org", "TYPE B: individual seeking work, not an employer offering a role", \
+"TYPE A: requires payment for the certificate", "neither type: general discussion/career question"). \
+No other keys.
 
 If is_valid_opportunity is true, also return:
 - program_name: clean name of the program/opportunity, or "Company — Role" for a TYPE B posting \
@@ -247,6 +252,12 @@ def parse_with_llm(opportunity: Opportunity) -> bool:
 
     opportunity.is_valid_opportunity = bool(fields.get("is_valid_opportunity"))
     if not opportunity.is_valid_opportunity:
+        # Logged here (not just counted in main.py's aggregate) so a run's
+        # log can actually be read to judge whether the gatekeeper is
+        # over-rejecting real opportunities or correctly killing spam —
+        # without this, "N rejected" gave no way to tell which.
+        reason = fields.get("rejection_reason") or "no reason given"
+        log.info("Gemini rejected %r (%s): %s", opportunity.title, opportunity.source, reason)
         return True  # LLM ran fine; it just isn't a real opportunity — caller skips it
 
     opportunity.program_name = fields.get("program_name") or opportunity.title
