@@ -1037,4 +1037,18 @@ DESCRIPTION:AWS is offering a free certification challenge #3 for students
  r/pacetest3\nRelevance score: 9.5
 URL:https://reddit.com/r/pacetest3
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] CS Girlies Annual Hackathon - Technology For Wellness
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+DTSTAMP:20260815T065532Z
+UID:737d4c81e15b9f50-deadline@intern-tracker
+DESCRIPTION:CS Girlies Annual Hackathon - Technology For Wellness\nOrganiz
+ er: Computer Science Girlies\nLocation: Online\nThemes: Beginner Friendly\
+ , Machine Learning/AI\, Social Good\nPrize: $5\,000\nSubmission period: Au
+ g 14 - 16\, 2026 (1 day left)\nOpen online hackathon on Devpost. Free to e
+ nter\, no fee required.\n\nSource: devpost\nLink: https://cs-girlies-welln
+ ess-hackathon.devpost.com/\nRelevance score: 6.0
+URL:https://cs-girlies-wellness-hackathon.devpost.com/
+END:VEVENT
 END:VCALENDAR
