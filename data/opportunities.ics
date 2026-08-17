@@ -1051,4 +1051,17 @@ DESCRIPTION:CS Girlies Annual Hackathon - Technology For Wellness\nOrganiz
  ess-hackathon.devpost.com/\nRelevance score: 6.0
 URL:https://cs-girlies-wellness-hackathon.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] NeuralSprint
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+DTSTAMP:20260817T185039Z
+UID:9493e111182e2208-deadline@intern-tracker
+DESCRIPTION:NeuralSprint\nOrganizer: NeuralSprint\nLocation: Online\nTheme
+ s: Machine Learning/AI\, Social Good\, Web\nPrize: $150\nSubmission period
+ : Jun 18 - Aug 24\, 2026 (7 days left)\nOpen online hackathon on Devpost. 
+ Free to enter\, no fee required.\n\nSource: devpost\nLink: https://neurals
+ print.devpost.com/\nRelevance score: 5.0
+URL:https://neuralsprint.devpost.com/
+END:VEVENT
 END:VCALENDAR
