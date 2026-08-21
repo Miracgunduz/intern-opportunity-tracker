@@ -1064,4 +1064,17 @@ DESCRIPTION:NeuralSprint\nOrganizer: NeuralSprint\nLocation: Online\nTheme
  print.devpost.com/\nRelevance score: 5.0
 URL:https://neuralsprint.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Hacksocial 2026
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+DTSTAMP:20260821T184731Z
+UID:07b752dc0c187988-deadline@intern-tracker
+DESCRIPTION:Hacksocial 2026\nOrganizer: Hacksocial\nLocation: Online\nThem
+ es: Machine Learning/AI\, Open Ended\, Social Good\nPrize: $3\,979\nSubmis
+ sion period: Aug 01 - 31\, 2026 (10 days left)\nOpen online hackathon on D
+ evpost. Free to enter\, no fee required.\n\nSource: devpost\nLink: https:/
+ /hacksocial2026.devpost.com/\nRelevance score: 5.0
+URL:https://hacksocial2026.devpost.com/
+END:VEVENT
 END:VCALENDAR
