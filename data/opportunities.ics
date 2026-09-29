@@ -1077,4 +1077,18 @@ DESCRIPTION:Hacksocial 2026\nOrganizer: Hacksocial\nLocation: Online\nThem
  /hacksocial2026.devpost.com/\nRelevance score: 5.0
 URL:https://hacksocial2026.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Multimodal AI Hackathon 2026
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+DTSTAMP:20260929T220910Z
+UID:f412f535290f6280-deadline@intern-tracker
+DESCRIPTION:Multimodal AI Hackathon 2026\nOrganizer: Kamand Prompt\, IIT M
+ andi\nLocation: Online\nThemes: Machine Learning/AI\nPrize: ₹ 100\,000\n
+ Submission period: Sep 29 - Oct 14\, 2026 (15 days left)\nOpen online hack
+ athon on Devpost. Free to enter\, no fee required.\n\nSource: devpost\nLin
+ k: https://multimodal-ai-hackathon-2026-7.devpost.com/\nRelevance score: 5
+ .5
+URL:https://multimodal-ai-hackathon-2026-7.devpost.com/
+END:VEVENT
 END:VCALENDAR
