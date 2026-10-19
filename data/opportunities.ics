@@ -1091,4 +1091,17 @@ DESCRIPTION:Multimodal AI Hackathon 2026\nOrganizer: Kamand Prompt\, IIT M
  .5
 URL:https://multimodal-ai-hackathon-2026-7.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Learn AR with SPECS
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+DTSTAMP:20261019T221726Z
+UID:6377da5e76b93d85-deadline@intern-tracker
+DESCRIPTION:Learn AR with SPECS\nOrganizer: Devpost\nLocation: Online\nThe
+ mes: AR/VR\, Machine Learning/AI\, Design\nPrize: $2\,500\nSubmission peri
+ od: Oct 15 - Nov 09\, 2026 (21 days left)\nOpen online hackathon on Devpos
+ t. Free to enter\, no fee required.\n\nSource: devpost\nLink: https://lear
+ n-specs.devpost.com/\nRelevance score: 5.0
+URL:https://learn-specs.devpost.com/
+END:VEVENT
 END:VCALENDAR
