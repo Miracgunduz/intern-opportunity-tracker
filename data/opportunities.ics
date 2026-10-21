@@ -1104,4 +1104,31 @@ DESCRIPTION:Learn AR with SPECS\nOrganizer: Devpost\nLocation: Online\nThe
  n-specs.devpost.com/\nRelevance score: 5.0
 URL:https://learn-specs.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Syntax Summit
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+DTSTAMP:20261021T114053Z
+UID:09f51fa2fe7b0226-deadline@intern-tracker
+DESCRIPTION:Syntax Summit\nOrganizer: Student Organization\nLocation: Onli
+ ne\nThemes: DevOps\, Machine Learning/AI\, Robotic Process Automation\nPri
+ ze: $0\nSubmission period: Jul 18\, 2026 - Jan 14\, 2027 (3 months left)\n
+ Open online hackathon on Devpost. Free to enter\, no fee required.\n\nSour
+ ce: devpost\nLink: https://syntax-summit.devpost.com/\nRelevance score: 6.
+ 5
+URL:https://syntax-summit.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Next Byte Hacks V5
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+DTSTAMP:20261021T114053Z
+UID:306d4bf29d2b5290-deadline@intern-tracker
+DESCRIPTION:Next Byte Hacks V5\nOrganizer: Next Byte Hacks\nLocation: Onli
+ ne\nThemes: Beginner Friendly\, Low/No Code\, Open Ended\nPrize: $100\nSub
+ mission period: Oct 06 - 31\, 2026 (10 days left)\nOpen online hackathon o
+ n Devpost. Free to enter\, no fee required.\n\nSource: devpost\nLink: http
+ s://next-byte-hacks-v5.devpost.com/\nRelevance score: 6.0
+URL:https://next-byte-hacks-v5.devpost.com/
+END:VEVENT
 END:VCALENDAR
