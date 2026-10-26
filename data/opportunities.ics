@@ -1131,4 +1131,18 @@ DESCRIPTION:Next Byte Hacks V5\nOrganizer: Next Byte Hacks\nLocation: Onli
  s://next-byte-hacks-v5.devpost.com/\nRelevance score: 6.0
 URL:https://next-byte-hacks-v5.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] NextSpark Hacks
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+DTSTAMP:20261026T223403Z
+UID:907788c311ab206a-deadline@intern-tracker
+DESCRIPTION:NextSpark Hacks\nOrganizer: Independent Student Organizer\nLoc
+ ation: Online\nThemes: Beginner Friendly\, Machine Learning/AI\, Open Ende
+ d\nPrize: $100\nSubmission period: Oct 21 - 26\, 2026 (about 4 hours left)
+ \nOpen online hackathon on Devpost. Free to enter\, no fee required.\n\nSo
+ urce: devpost\nLink: https://nextspark-hacks.devpost.com/\nRelevance score
+ : 7.5
+URL:https://nextspark-hacks.devpost.com/
+END:VEVENT
 END:VCALENDAR
