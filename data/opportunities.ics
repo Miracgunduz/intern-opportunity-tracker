@@ -1145,4 +1145,17 @@ DESCRIPTION:NextSpark Hacks\nOrganizer: Independent Student Organizer\nLoc
  : 7.5
 URL:https://nextspark-hacks.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] GenHacks
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+DTSTAMP:20261116T153533Z
+UID:9707aeea4eaa6fc9-deadline@intern-tracker
+DESCRIPTION:GenHacks\nOrganizer: Shail & Sharaf\nLocation: Online\nThemes:
+  Beginner Friendly\, IoT\, Machine Learning/AI\nPrize: $CAD 1\,050\nSubmis
+ sion period: Nov 01 - Dec 26\, 2026 (about 1 month left)\nOpen online hack
+ athon on Devpost. Free to enter\, no fee required.\n\nSource: devpost\nLin
+ k: https://genhacks-open.devpost.com/\nRelevance score: 6.0
+URL:https://genhacks-open.devpost.com/
+END:VEVENT
 END:VCALENDAR
