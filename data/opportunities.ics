@@ -1158,4 +1158,50 @@ DESCRIPTION:GenHacks\nOrganizer: Shail & Sharaf\nLocation: Online\nThemes:
  k: https://genhacks-open.devpost.com/\nRelevance score: 6.0
 URL:https://genhacks-open.devpost.com/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Apply
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+DTSTAMP:20261117T015112Z
+UID:c66cd2fa4d920410-deadline@intern-tracker
+DESCRIPTION:Apply\n18 Dec 2026 (31 days) | **AI Agents for Founders Challe
+ nge (HETIC 2026)** (HETIC) | EUR 1\,000 in cash: EUR 600 grand prize\, EUR
+  250 runner-up\, EUR 150 award | Higher-education students 18+\, worldwide
+ \, teams of 2 to 4\; online\; build AI agents that save founders time. Sub
+ missions open November 16 | Yes | [Apply](https://ai-agents-founders-hetic
+ -26.devpost.com/) |\n\nSource: github\nLink: https://ai-agents-founders-he
+ tic-26.devpost.com/\nRelevance score: 4.5
+URL:https://ai-agents-founders-hetic-26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Apply
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+DTSTAMP:20261117T015112Z
+UID:307e020505288b86-deadline@intern-tracker
+DESCRIPTION:Apply\n30 Nov 2026 (13 days) | **Agentware: AI Agent Hackathon
+ ** (Hackathon Raptors) | $1\,800 pool: $800 first\, $400 second\, $200 thi
+ rd\, plus side prizes | Solo or teams of 1 to 4\, online\, free\; a 72-hou
+ r build of an open-source AI agent that acts on its own. No country rules 
+ on the page | Unclear | [Apply](https://www.agentwarehack.com/) |\n\nSourc
+ e: github\nLink: https://www.agentwarehack.com/\nRelevance score: 3.5
+URL:https://www.agentwarehack.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Deadline] Apply
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+DTSTAMP:20261117T015112Z
+UID:2e3c96425865c809-deadline@intern-tracker
+DESCRIPTION:Apply\n6 Dec 2026 (19 days) | **Threat Intelligence and Threat
+  Modelling Hackathon** (Apart Research and SL5) | $5\,000 in cash ($2\,500
+  first)\, free to join | Anyone\, no background needed\, teams of 1 to 5\;
+  online December 4 to 6\; use LLMs for threat intelligence and threat mode
+ lling | Yes | [Apply](https://apartresearch.com/sprints/threat-intelligenc
+ e-threat-modelling-2026) |\n\nSource: github\nLink: https://apartresearch.
+ com/sprints/threat-intelligence-threat-modelling-2026\nRelevance score: 3.
+ 5
+URL:https://apartresearch.com/sprints/threat-intelligence-threat-modelling
+ -2026
+END:VEVENT
 END:VCALENDAR
